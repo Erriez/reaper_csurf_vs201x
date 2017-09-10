@@ -83,7 +83,8 @@ or download and extract the ZIP of this repository.
 13. In REAPER click ```Tools | Preferences | Control/OSC/web``` Click ```Add``` to add a surface.
 
 ### Wiki
-TODO
+A more detailed description of the CSurf project settings and code is located on
+[the Wiki page](https://github.com/Erriez/reaper_csurf_vs2015/wiki).
 
 ### FAQ
 
@@ -93,4 +94,4 @@ A: Unfortunately, I could not find any documentation how build it.
 Volunteers are welcome to send me a fully tested pull-request. I don't have a MAC, so can't test it. 
 
 ### Contact
-TODO
+Please use the [REAPER forum](https://forum.cockos.com/showthread.php?p=1884391).
