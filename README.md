@@ -1,7 +1,7 @@
-# Building REAPER CSurf with VS2015 
+# Building REAPER CSurf with Visual Studio
 This repository contains a REAPER Surface Controller (CSurf) project for all Reaper versions, 
 running on Windows 32 and 64 bit. It describes step by step how to build and debug with 
-Microsoft Visual Studio 2015 (Community Edition).
+Microsoft Visual Studio (Free Community Edition).
 
 ## Introduction
 A [surface controller](https://en.wikipedia.org/wiki/Audio_control_surface) allows users to control
@@ -16,7 +16,7 @@ applied.
 
 ## Prerequisites
 * Windows (7/8/10)
-* Microsoft Visual Studio 2015 or higher (Tested with the free Community Edition)
+* Microsoft Visual Studio (Tested with the free Community Edition)
 * REAPER version 4 or 5, 32 or 64 bit
 * REAPER Extension SDK
 * A compatible surface, for example:
@@ -28,7 +28,7 @@ applied.
 * C++ knowledge
 
 ### Installation
-1. Install Visual Studio 2015 (Community Edition) or higher.
+1. Install Visual Studio 2013, 2015 or 2017 (Free Community Edition) or higher.
 
 2. Download REAPER SDK from:
 https://www.reaper.fm/sdk/plugin/reaper_extension_sdk.zip
@@ -45,10 +45,11 @@ https://www.reaper.fm/sdk/plugin/reaper_extension_sdk.zip
   * Variable value: ```C:\reaper_extension_sdk```
 
 5. Clone this repository with the GIT command: 
-```git clone https://github.com/Erriez/reaper_csurf_vs2015.git```
+```git clone https://github.com/Erriez/reaper_csurf_vs201x.git```
 or download and extract the ZIP of this repository.
 
-6. Open the solution ```Builds\VisualStudio2015\reaper_csurf.sln``` with Visual Studio.
+6. Open the solution ```Builds\VisualStudio<VERSION>\reaper_csurf.sln``` with Visual Studio.  
+   Note: Replace ```<VERSION>``` with the Visual Studio version, for example 2013, 2015 or 2017.
 
 7. Select in the toolbar:
  * ```Debug``` (Default)
