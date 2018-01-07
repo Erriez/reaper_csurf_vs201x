@@ -3,6 +3,12 @@ This repository contains a REAPER Surface Controller (CSurf) project for all Rea
 running on Windows 32 and 64 bit. It describes step by step how to build and debug with 
 Microsoft Visual Studio (Free Community Edition).
 
+## Branches
+This Feature/SingleCSurf branch contains one single CSurf controller as 
+requested on [GitHub](https://github.com/Erriez/reaper_csurf_vs201x/issues/1) 
+It's based on the BCF2000 as starting point and listed in the Reaper | 
+Preferences | Control/OSC/web dialog box as "My Device".
+
 ## Introduction
 A [surface controller](https://en.wikipedia.org/wiki/Audio_control_surface) allows users to control
 a DAW ([Digital Audio Workstation](https://en.wikipedia.org/wiki/Digital_audio_workstation)), in 

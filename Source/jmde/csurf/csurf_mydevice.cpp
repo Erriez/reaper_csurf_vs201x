@@ -1,7 +1,7 @@
 /*
 ** reaper_csurf
-** BCFF2k support
-** Copyright (C) 2006-2008 Cockos Incorporated
+** My Device support
+** Copyright (C) 2006-2018
 ** License: LGPL.
 */
 
@@ -50,7 +50,7 @@ static unsigned char panToChar(double pan)
 
 
 
-class CSurf_BCF2k : public IReaperControlSurface
+class CSurf_MyDevice : public IReaperControlSurface
 {
     int m_midi_in_dev,m_midi_out_dev;
     int m_offset, m_size;
@@ -128,7 +128,7 @@ class CSurf_BCF2k : public IReaperControlSurface
     }
 
 public:
-  CSurf_BCF2k(int offset, int size, int indev, int outdev, int *errStats)
+  CSurf_MyDevice(int offset, int size, int indev, int outdev, int *errStats)
   {
     m_offset=offset;
     m_size=size;
@@ -154,17 +154,17 @@ public:
       m_midiin->start();
 
   }
-  ~CSurf_BCF2k()
+  ~CSurf_MyDevice()
   {
     delete m_midiout;
     delete m_midiin;
   }
 
 
-  const char *GetTypeString() { return "BCF2K"; }
+  const char *GetTypeString() { return "MyDevice"; }
   const char *GetDescString()
   {
-    descspace.Set("BCF 2000");
+    descspace.Set("My Device");
     char tmp[512];
     sprintf(tmp," (dev %d,%d)",m_midi_in_dev,m_midi_out_dev);
     descspace.Append(tmp);
@@ -323,7 +323,7 @@ static IReaperControlSurface *createFunc(const char *type_string, const char *co
   int parms[4];
   parseParms(configString,parms);
 
-  return new CSurf_BCF2k(parms[0],parms[1],parms[2],parms[3],errStats);
+  return new CSurf_MyDevice(parms[0],parms[1],parms[2],parms[3],errStats);
 }
 
 
@@ -403,10 +403,10 @@ static HWND configFunc(const char *type_string, HWND parent, const char *initCon
 }
 
 
-reaper_csurf_reg_t csurf_bcf_reg = 
+reaper_csurf_reg_t csurf_my_device_reg = 
 {
-  "BCF2K",
-  "Behringer BCF2000 (using preset 1)",
+  "MyDevice",
+  "My Device",
   createFunc,
   configFunc,
 };

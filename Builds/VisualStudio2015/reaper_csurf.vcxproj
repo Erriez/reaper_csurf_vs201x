@@ -24,14 +24,8 @@
     <ClInclude Include="..\..\Source\jmde\reaper_plugin.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_01X.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_alphatrack.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_babyhui.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_bcf2000.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_faderport.cpp" />
+    <ClCompile Include="..\..\Source\jmde\csurf\csurf_mydevice.cpp" />
     <ClCompile Include="..\..\Source\jmde\csurf\csurf_main.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_mcu.cpp" />
-    <ClCompile Include="..\..\Source\jmde\csurf\csurf_tranzport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\Source\jmde\csurf\res.rc" />
